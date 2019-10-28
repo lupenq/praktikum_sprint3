@@ -7,16 +7,21 @@
 @import url("../blocks/places/places.css");
 @import url("../blocks/place/place.css");
 @import url("../blocks/url/url.css");
+@import url("../blocks/content-title/content-title.css");
+@import url("../blocks/content-subtitle/content-subtitle.css");
+@import url("../blocks/video/video.css");
 
-* {
-  font-family: "Inter", Arial, sans-serif;
-  background-color: #2a2c2f;
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #2a2c2f;
 }
 
 .page {
-  min-width: 1184px;
-  max-width: 1184px;
-  margin: 0 auto;
-  font-family: "Inter", Arial, sans-serif;
-  color: #ffffff;
+    min-width: 1184px;
+    max-width: 1184px;
+    margin: 0 auto;
+    font-family: "Inter", Arial, sans-serif;
+    color: #ffffff;
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #2a2c2f;
 }

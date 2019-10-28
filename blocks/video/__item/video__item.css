@@ -1,0 +1,21 @@
+.video__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    width: 583px;
+    height: 323px;
+    border-radius: 5px;
+    position: relative;
+    padding: 30px;
+}
+
+.video__item:first-child {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../../images/video1.jpg");
+}
+
+.video__item:last-child {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../../images/video2.jpg");
+}
