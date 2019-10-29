@@ -1,0 +1,8 @@
+.barentsburg__description {
+    display: flex;
+    margin-top: 48px;
+}
+
+.barentsburg__description .url {
+    width: 282px;
+}
