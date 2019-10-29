@@ -10,6 +10,7 @@
 @import url("../blocks/content-title/content-title.css");
 @import url("../blocks/content-subtitle/content-subtitle.css");
 @import url("../blocks/video/video.css");
+@import url("../blocks/additional/additional.css");
 
 body {
     font-family: "Inter", Arial, sans-serif;
