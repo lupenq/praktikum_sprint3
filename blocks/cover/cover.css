@@ -1,0 +1,11 @@
+@import url("./__title/cover__title.css");
+@import url("./__subtitle/cover__subtitle.css");
+
+.cover {
+    position: relative;
+    margin-top: 102px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../images/cover.jpg");
+    width: 1184px;
+    height: 594px;
+}
