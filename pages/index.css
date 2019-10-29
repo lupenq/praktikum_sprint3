@@ -11,6 +11,8 @@
 @import url("../blocks/content-subtitle/content-subtitle.css");
 @import url("../blocks/video/video.css");
 @import url("../blocks/additional/additional.css");
+@import url("../blocks/comment/comment.css");
+@import url("../blocks/comments/comments.css");
 
 body {
     font-family: "Inter", Arial, sans-serif;
