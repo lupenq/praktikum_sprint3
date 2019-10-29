@@ -16,6 +16,7 @@
 @import url("../blocks/cover/cover.css");
 @import url("../blocks/emblem/emblem.css");
 @import url("../blocks/barentsburg/barentsburg.css");
+@import url("../blocks/footer/footer.css");
 
 body {
     font-family: "Inter", Arial, sans-serif;
