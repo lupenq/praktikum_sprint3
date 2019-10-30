@@ -24,7 +24,6 @@ body {
 }
 
 .page {
-    min-width: 1184px;
     max-width: 1184px;
     margin: 0 auto;
     font-family: "Inter", Arial, sans-serif;

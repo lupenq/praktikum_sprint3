@@ -4,6 +4,11 @@
     font-size: 18px;
     line-height: 30px;
     text-decoration-line: underline;
-
+    opacity: 1;
+    transition: opacity 0.5s;
     color: #ffffff;
+}
+
+.url__link:hover {
+    opacity: 0.7;
 }

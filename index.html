@@ -5,20 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Путешествия по России</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./vendor/normilize.css">
         <link rel="stylesheet" href="./pages/index.css" />
+        <!-- DONE Надо исправить: вам нужно подключить normalize в head -->
     </head>
 
     <body>
         <div class="page">
+            <!-- DONE Можно лучше: свойство min-width тут лишнее, можно его убрать. -->
             <header class="header">
                 <img
                     src="./blocks/header/__logo/logo.svg"
-                    alt=""
+                    alt="Россия"
                     class="header__logo"
                 />
                 <div class="header__lang">
-                    <a href="#" class="header__lang-link">Ru</a>
+                    <a href="#" class="header__lang-link header__lang_active">Ru</a>
                     <a href="#" class="header__lang-link">En</a>
+                    <!-- DONE Надо исправить: задайте подчеркивание только активному языку, используя модификатор-->
                 </div>
             </header>
 
@@ -26,22 +30,26 @@
                 <h1 class="lead__title">
                     Путешествия по России
                 </h1>
-                <h2 class="lead__subtitle">
+                <p class="lead__subtitle">
                     Настоящая страна не в выпусках новостей, а здесь.
-                </h2>
-                <img src="./images/__image.jpg" alt="" class="lead__image" />
+                </p>
+                <!-- DONE Надо исправить: подзаголовки по спецификации размечаются тегом p, так как не выделяют отдельный смысловой раздел, а уточняют заголовок. Поправьте везде -->
+                <img src="./images/__image.jpg" alt="Поезд" class="lead__image" />
                 <p class="lead__caption">Ваша полка — верхняя</p>
             </section>
 
             <section class="intro">
+                <!-- DONE Надо исправить: увеличить отступ сверху-->
                 <h2 class="intro__title">
                     Чего мы там не видели?
                 </h2>
-                <h3 class="intro__subtitle">
+                 <!-- DONE Надо исправить: немного уменьшить отступ снизу-->
+                <p class="intro__subtitle">
                     Зачем путешествовать по своему дому
-                </h3>
+                </p>
                 <div class="intro__content-row">
-                    <div class="intro__content-row__text">
+                    <!-- DONE Надо исправить: лишнее свойство height -->
+                    <p class="intro__content-row-text">
                         По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь
                         поехать, но только 36% планируют провести отпуск в
                         родной стране. Мол, чего мы тут, дома, не видели? На
@@ -54,10 +62,13 @@
                         усадила их в свою «Ладу» и проехала 20 тысяч километров
                         по родной стране. Мы выбрали и описали некоторые
                         интересные места, достойные вашего отпуска.
-                    </div>
-                    <div class="intro__content-row__text">
-                        <b>Автор текста:</b> Иван Иванов<br />
-                        <b>Дата:</b> 01.01.1905
+                    </p>
+                    <!-- DONE Надо исправить: у элемента не может быть элемента. Это другой элемент этого блока. -->
+                <!-- DONE Надо исправить: Для текста используйте семантические теги h1-h5/p, div не несет никакой семантической нагрузки, это просто контейнер.  -->
+                    <div class="intro__content-row-text">
+                        <p class="intro__author"><b>Автор текста:</b> Иван Иванов</p>
+                        <p class="intro__date"><b>Дата:</b> 01.01.1905</p>
+                        <!-- DONE Надо исправить: не используйте br для переноса. Блочные элементы, например, абзацы, сами переносятся на следующую строку -->
                     </div>
                 </div>
                 <ul class="intro__text">
@@ -72,62 +83,62 @@
             <section class="photo-grid">
                 <img
                     src="./images/__item-11.jpg"
-                    alt=""
+                    alt="Фотография"
                     class="photo-grid__item"
                 />
                 <img
                     src="./images/__item-10.jpg"
-                    alt=""
+                    alt="Фотография"
                     class="photo-grid__item"
                 />
                 <img
                     src="./images/__item-9.jpg"
-                    alt=""
+                    alt="Фотография"
                     class="photo-grid__item"
                 />
                 <img
                     src="./images/__item-8.jpg"
-                    alt=""
+                    alt="Фотография"
                     class="photo-grid__item"
                 />
                 <img
                     src="./images/__item-7.jpg"
-                    alt=""
+                    alt="Фотография"
                     class="photo-grid__item"
                 />
                 <img
                     src="./images/__item-6.jpg"
-                    alt=""
+                    alt="Фотография"
                     class="photo-grid__item"
                 />
                 <img
                     src="./images/__item-5.jpg"
-                    alt=""
+                    alt="Фотография"
                     class="photo-grid__item"
                 />
                 <img
                     src="./images/__item-4.jpg"
-                    alt=""
+                    alt="Фотография"
                     class="photo-grid__item"
                 />
                 <img
                     src="./images/__item-3.jpg"
-                    alt=""
+                    alt="Фотография"
                     class="photo-grid__item"
                 />
                 <img
                     src="./images/__item-2.jpg"
-                    alt=""
+                    alt="Фотография"
                     class="photo-grid__item"
                 />
                 <img
                     src="./images/__item-1.jpg"
-                    alt=""
+                    alt="Фотография"
                     class="photo-grid__item"
                 />
                 <img
                     src="./images/__item.jpg"
-                    alt=""
+                    alt="Фотография"
                     class="photo-grid__item"
                 />
             </section>
@@ -137,9 +148,9 @@
                     <h2 class="place__title">Куршская коса</h2>
                     <div class="url">
                         <p class="url__heading">URL</p>
-                        <a href="#" class="url__link">park-kosa.ru</a>
+                        <a href="http://park-kosa.ru/" class="url__link">park-kosa.ru</a>
                     </div>
-                    <img src="./images/kursh.jpg" alt="" class="place__image" />
+                    <img src="./images/kursh.jpg" alt="Куршская коса" class="place__image" />
                     <div class="place__text">
                         <p class="place__paragraph">
                             Здесь, посреди лесов и песчаных дюн, вы сможете
@@ -164,11 +175,11 @@
                     <h2 class="place__title">Кольский</h2>
                     <div class="url">
                         <p class="url__heading">URL</p>
-                        <a href="#" class="url__link">National Geographic</a>
+                        <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="url__link">National Geographic</a>
                     </div>
                     <img
                         src="./images/Kolskiy.jpg"
-                        alt=""
+                        alt="Кольский"
                         class="place__image"
                     />
                     <div class="place__text">
@@ -195,9 +206,9 @@
                     <h2 class="place__title">Алтай</h2>
                     <div class="url">
                         <p class="url__heading">URL</p>
-                        <a href="#" class="url__link">Facebook</a>
+                        <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" class="url__link">Facebook</a>
                     </div>
-                    <img src="./images/altaj.jpg" alt="" class="place__image" />
+                    <img src="./images/altaj.jpg" alt="Алтай" class="place__image" />
                     <div class="place__text">
                         <p class="place__paragraph">
                             Алтай — одно из красивейших мест в России. В первую
@@ -222,13 +233,13 @@
                     <h2 class="place__title">Зимний Байкал</h2>
                     <div class="url">
                         <p class="url__heading">URL</p>
-                        <a href="#" class="url__link"
+                        <a href="https://vk.com/baikalmile" class="url__link"
                             >https://vk.com/baikalmile</a
                         >
                     </div>
                     <img
                         src="./images/bajkal.jpg"
-                        alt=""
+                        alt="Зимний Байкал"
                         class="place__image"
                     />
                     <div class="place__text">
@@ -252,11 +263,11 @@
                     <h2 class="place__title">Карелия</h2>
                     <div class="url">
                         <p class="url__heading">URL</p>
-                        <a href="#" class="url__link">http://vodlozero.ru/</a>
+                        <a href="http://vodlozero.ru/" class="url__link">http://vodlozero.ru/</a>
                     </div>
                     <img
                         src="./images/karelija.jpg"
-                        alt=""
+                        alt="Карелия"
                         class="place__image"
                     />
                     <div class="place__text">
@@ -282,27 +293,34 @@
                 <h2 class="content-title">
                     В глубины Земли и в дальний космос
                 </h2>
-                <h3 class="content-subtitle">
+                 <!-- DONE Надо исправить: немного уменьшить отступ снизу-->
+                <p class="content-subtitle">
                     Видео от студии Stereotactic о местах в России, где ведутся
                     фундаментальные исследования
-                </h3>
+                </p>
                 <div class="video__container">
-                    <div class="video__item">
+                        <a href="https://vimeo.com/81106671" class="video__link" target="_blank">
+                        <div class="video__item video__item_first">
+                        <!-- DONE Надо исправить: лучше не задавать блокам с контентов height, безопаснее использовать min-height, чтобы верстка не сломалась, если объем контента изменится -->
                         <div class="video__icon video__icon_type_play"></div>
                         <p class="video__duration">6:30</p>
-                        <p class="video__title">Colors of Kamchatka</p>
+                        <h3 class="video__title">Colors of Kamchatka</h3>
+                        <!-- DONE Можно лучше: это скорее заголовок -->
                         <p class="video__subtitle">
                             Director: Pavel Karykhalin
                         </p>
-                    </div>
-                    <div class="video__item">
-                        <div class="video__icon video__icon_type_play"></div>
-                        <p class="video__duration">24:45</p>
-                        <p class="video__title">Обсерватория | Observatory</p>
-                        <p class="video__subtitle">
-                            Director: Alexander Khudokon
-                        </p>
-                    </div>
+                    </div> 
+                </a>
+                    <a href="https://vimeo.com/290675450" class="video__link" target="_blank">
+                        <div class="video__item video__item_second">
+                            <div class="video__icon video__icon_type_play"></div>
+                            <p class="video__duration">24:45</p>
+                            <p class="video__title">Обсерватория | Observatory</p>
+                            <p class="video__subtitle">
+                                Director: Alexander Khudokon
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </section>
 
@@ -310,9 +328,9 @@
                 <h2 class="content-title">
                     А также
                 </h2>
-                <h3 class="content-subtitle">
+                <p class="content-subtitle">
                     места, рекомендованные нашими фотографами
-                </h3>
+                </p>
                 <div class="additional__container">
                     <article class="additional__item">
                         <h4 class="additional__heading">
@@ -359,16 +377,16 @@
                 <h2 class="content-title">
                     Фотографы, снимающие Россию
                 </h2>
-                <h3 class="content-subtitle">
+                <p class="content-subtitle">
                     Природа и люди вдохновили их работы, удостоенные наград на
                     международных конкурсах
-                </h3>
+                </p>
                 <div class="comments__container">
                     <article class="comment">
                         <img
                             class="comment__image"
                             src="./images/lyagushkin.jpg"
-                            alt=""
+                            alt="Виктор Лягушкин"
                         />
                         <p class="comment__quote">
                             «Если вам кажется, что в России ничего не
@@ -381,7 +399,7 @@
                         <img
                             class="comment__image"
                             src="./images/hafizov.jpg"
-                            alt=""
+                            alt="Иван Хафизов"
                         />
                         <p class="comment__quote">
                             «Если в город едут туристы — неважно за чем они туда
@@ -397,7 +415,7 @@
                         <img
                             class="comment__image"
                             src="./images/maksimshin.jpg"
-                            alt=""
+                            alt="Сергей Максимишин"
                         />
                         <p class="comment__quote">
                             «Ты приезжаешь, и люди рассказывают тебе, как им
@@ -409,13 +427,16 @@
                 </div>
             </section>
 
+            <a class="cover__link" href="https://stampsy.com/na-elektrichkakh-do-baikala">
             <section class="cover">
                 <h2 class="cover__title">До Байкала «на собаках»</h2>
-                <h3 class="cover__subtitle">
+                <!-- DONE Можно лучше: попробуйте позиционировать точно по центру блока другим способом. Абсолютные величины вам будет сложно адаптировать в следующем спринте -->
+                <p class="cover__subtitle">
                     По мотивам учебной темы о Транссибе и iframes — путешествие
                     от столицы до Байкала на электричках.
-                </h3>
+                </p>
             </section>
+        </a>
             <section class="emblem">
                 <h2 class="emblem__title">
                     Природа на гербах российских городов
@@ -424,15 +445,18 @@
                     <article class="emblem__item">
                         <img
                             class="emblem__image"
-                            src="../../images/vel_nov.png"
+                            src="./images/vel_nov.png"
+                            alt="Великий Новгород"
                         />
+                        <!-- DONE Надо исправить: поправьте пути к изображениям, сейчас их не видно -->
                         <p class="emblem__city">Великий Новгород</p>
                     </article>
 
                     <article class="emblem__item">
                         <img
                             class="emblem__image"
-                            src="../../images/rostov.png"
+                            src="./images/rostov.png"
+                            alt="Ростов Великий"
                         />
                         <p class="emblem__city">Ростов Великий</p>
                     </article>
@@ -440,7 +464,8 @@
                     <article class="emblem__item">
                         <img
                             class="emblem__image"
-                            src="../../images/tambov.png"
+                            src="./images/tambov.png"
+                            alt="Тамбов"
                         />
                         <p class="emblem__city">Тамбов</p>
                     </article>
@@ -448,7 +473,8 @@
                     <article class="emblem__item">
                         <img
                             class="emblem__image"
-                            src="../../images/elabuga.png"
+                            src="./images/elabuga.png"
+                            alt="Елабуга"
                         />
                         <p class="emblem__city">Елабуга</p>
                     </article>
@@ -456,7 +482,8 @@
                     <article class="emblem__item">
                         <img
                             class="emblem__image"
-                            src="../../images/permj.png"
+                            src="./images/permj.png"
+                            alt="Пермь"
                         />
                         <p class="emblem__city">Пермь</p>
                     </article>
@@ -466,7 +493,7 @@
             <section class="barentsburg">
                 <h2 class="barentsburg__title">Баренцбург</h2>
                 <p class="barentsburg__coord">78.0648° с.ш. 14.2335° в.д.</p>
-                <img src="./images/__map.png" alt="" class="barentsburg__map" />
+                <img src="./images/__map.png" alt="Баренцбург" class="barentsburg__map" />
                 <div class="barentsburg__description">
                     <p class="barentsburg__text">
                         Арктика и соседство с Норвегией — мало кто знает о жизни
@@ -475,7 +502,7 @@
                     </p>
                     <div class="url">
                         <p class="url__heading">URL</p>
-                        <a href="#" class="url__link"
+                        <a href="https://meduza.io/feature/2016/03/02/umeret-ili-roditsya-zdes-prakticheski-nevozmozhno" class="url__link"
                             >Умереть или родиться здесь практически
                             невозможно</a
                         >
@@ -484,14 +511,34 @@
             </section>
             <footer class="footer">
                 <nav class="footer__nav">
-                    <a href="#" class="footer__link">Карты</a>
-                    <a href="#" class="footer__link">Погода</a>
-                    <a href="#" class="footer__link">Расписание</a>
-                    <a href="#" class="footer__link">Календарь</a>
-                    <a href="#" class="footer__link">Путешествия</a>
+                    <a href="https://yandex.ru/maps/" class="footer__link">Карты</a>
+                    <a href="https://yandex.ru/pogoda/" class="footer__link">Погода</a>
+                    <a href="https://rasp.yandex.ru/" class="footer__link">Расписание</a>
+                    <a href="https://calendar.yandex.ru/" class="footer__link">Календарь</a>
+                    <a href="https://travel.yandex.ru" class="footer__link">Путешествия</a>
                 </nav>
-                <p class="footer__copyright">© 2019. Илья Дегтярёв</p>
+                <p class="footer__copyright">&#169;  2019. Илья Дегтярёв</p>
+                <!-- DONE Можно лучше: для символов можно использовать мнемоники https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B2_HTML-->
             </footer>
         </div>
     </body>
 </html>
+
+<!--
+    
+Отлично:
+Вы очень хорошо справились с работой: вёрстка сделана близко к макету, почти нет ошибок по БЭМ, используете семантические теги, причем не только основные, верно используете флексы и гриды, не злоупотребляете абсолютным позиционированием.
+
+Надо исправить:
+Нужно немного поправить некоторые отступы: расхождение с макетом не должно превышать 10px, DONE
+пути к изображениям в блоке emblem, DONE
+есть одно замечание по БЭМ. DONE
+Добавьте состояние при наведении блокам cover, additional, video (описание эффекта при наведении в комментариях в макете) и всем ссылкам. DONE
+
+Можно лучше:
+Удалите из архива неспользуемые шрифты. DONE
+Файлы со шрифтами весят довольно много, и чем больше вы отправляете пользователю файлов, тем больше траффик и тем дольше будет загружаться сайт.
+
+Комментарии "Надо исправить" критичны для того, чтобы работа была принята. "Можно лучше" - рекомендация.
+
+-->

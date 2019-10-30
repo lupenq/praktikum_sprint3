@@ -1,7 +1,5 @@
-@import url('./__text/intro__content-row__text.css');
-
 .intro__content-row {
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    margin-top: 35px;
 }
