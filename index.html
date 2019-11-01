@@ -7,12 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./vendor/normilize.css" />
         <link rel="stylesheet" href="./pages/index.css" />
-        <!-- DONE Надо исправить: вам нужно подключить normalize в head -->
     </head>
 
     <body>
         <div class="page">
-            <!-- DONE Можно лучше: свойство min-width тут лишнее, можно его убрать. -->
             <header class="header">
                 <img
                     src="./blocks/header/__logo/logo.svg"
@@ -20,11 +18,12 @@
                     class="header__logo"
                 />
                 <div class="header__lang">
-                    <a href="#" class="header__lang-link header__lang_active"
+                    <a
+                        href="#"
+                        class="header__lang-link header__lang-link_active"
                         >Ru</a
                     >
                     <a href="#" class="header__lang-link">En</a>
-                    <!-- DONE Надо исправить: задайте подчеркивание только активному языку, используя модификатор-->
                 </div>
             </header>
 
@@ -35,7 +34,6 @@
                 <p class="lead__subtitle">
                     Настоящая страна не в выпусках новостей, а здесь.
                 </p>
-                <!-- DONE Надо исправить: подзаголовки по спецификации размечаются тегом p, так как не выделяют отдельный смысловой раздел, а уточняют заголовок. Поправьте везде -->
                 <img
                     src="./images/__image.jpg"
                     alt="Поезд"
@@ -45,16 +43,13 @@
             </section>
 
             <section class="intro">
-                <!-- DONE Надо исправить: увеличить отступ сверху-->
                 <h2 class="intro__title">
                     Чего мы там не видели?
                 </h2>
-                <!-- DONE Надо исправить: немного уменьшить отступ снизу-->
                 <p class="intro__subtitle">
                     Зачем путешествовать по своему дому
                 </p>
                 <div class="intro__content-row">
-                    <!-- DONE Надо исправить: лишнее свойство height -->
                     <p class="intro__content-row-text">
                         По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь
                         поехать, но только 36% планируют провести отпуск в
@@ -69,14 +64,11 @@
                         по родной стране. Мы выбрали и описали некоторые
                         интересные места, достойные вашего отпуска.
                     </p>
-                    <!-- DONE Надо исправить: у элемента не может быть элемента. Это другой элемент этого блока. -->
-                    <!-- DONE Надо исправить: Для текста используйте семантические теги h1-h5/p, div не несет никакой семантической нагрузки, это просто контейнер.  -->
                     <div class="intro__content-row-text">
                         <p class="intro__author">
                             <b>Автор текста:</b> Иван Иванов
                         </p>
                         <p class="intro__date"><b>Дата:</b> 01.01.1905</p>
-                        <!-- DONE Надо исправить: не используйте br для переноса. Блочные элементы, например, абзацы, сами переносятся на следующую строку -->
                     </div>
                 </div>
                 <ul class="intro__text">
@@ -321,7 +313,6 @@
                 <h2 class="content-title">
                     В глубины Земли и в дальний космос
                 </h2>
-                <!-- DONE Надо исправить: немного уменьшить отступ снизу-->
                 <p class="content-subtitle">
                     Видео от студии Stereotactic о местах в России, где ведутся
                     фундаментальные исследования
@@ -333,13 +324,11 @@
                         target="_blank"
                     >
                         <div class="video__item video__item_first">
-                            <!-- DONE Надо исправить: лучше не задавать блокам с контентов height, безопаснее использовать min-height, чтобы верстка не сломалась, если объем контента изменится -->
                             <div
                                 class="video__icon video__icon_type_play"
                             ></div>
                             <p class="video__duration">6:30</p>
                             <h3 class="video__title">Colors of Kamchatka</h3>
-                            <!-- DONE Можно лучше: это скорее заголовок -->
                             <p class="video__subtitle">
                                 Director: Pavel Karykhalin
                             </p>
@@ -470,17 +459,14 @@
             </section>
 
             <a
-                class="cover__link"
+                class="cover"
                 href="https://stampsy.com/na-elektrichkakh-do-baikala"
             >
-                <section class="cover">
-                    <h2 class="cover__title">До Байкала «на собаках»</h2>
-                    <!-- DONE Можно лучше: попробуйте позиционировать точно по центру блока другим способом. Абсолютные величины вам будет сложно адаптировать в следующем спринте -->
-                    <p class="cover__subtitle">
-                        По мотивам учебной темы о Транссибе и iframes —
-                        путешествие от столицы до Байкала на электричках.
-                    </p>
-                </section>
+                <h2 class="cover__title">До Байкала «на собаках»</h2>
+                <p class="cover__subtitle">
+                    По мотивам учебной темы о Транссибе и iframes — путешествие
+                    от столицы до Байкала на электричках.
+                </p>
             </a>
             <section class="emblem">
                 <h2 class="emblem__title">
@@ -493,7 +479,6 @@
                             src="./images/vel_nov.png"
                             alt="Великий Новгород"
                         />
-                        <!-- DONE Надо исправить: поправьте пути к изображениям, сейчас их не видно -->
                         <p class="emblem__city">Великий Новгород</p>
                     </article>
 
@@ -579,11 +564,14 @@
                     >
                 </nav>
                 <p class="footer__copyright">&#169; 2019. Илья Дегтярёв</p>
-                <!-- DONE Можно лучше: для символов можно использовать мнемоники https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B2_HTML-->
             </footer>
         </div>
     </body>
 </html>
+
+<!-- Работа принята -->
+
+<!-- Вы практически всё исправили, осталась пара правок по БЭМ и одна по макету, и работа будет принята. -->
 
 <!--
     

@@ -1,13 +1,15 @@
 @import url("./__title/cover__title.css");
 @import url("./__subtitle/cover__subtitle.css");
-@import url("./__link/cover__link.css");
 
 .cover {
+    display: block;
     position: relative;
     margin-top: 102px;
     background: url("../../images/cover.jpg");
     width: 1184px;
     height: 594px;
+    text-decoration: none;
+    color: white;
 }
 
 .cover:before {
